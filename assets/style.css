@@ -6,13 +6,22 @@
     
 }
 
+body{
+    background-color: rgb(255, 250, 250);
+}
+
 .container{
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.container>h1{
+    text-align: center;
+    margin: 20px auto;
 
 }
+
 
 .content{
     margin-top: 50px;
@@ -24,11 +33,69 @@
 
 }
 
-.project{
-    background-color: #00000025;
+.container .content .project{
+    background-color: #0000000c;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     padding: 10px 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+}
 
+.container .content .project div{
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .content .project div .date-create{
+    border: 1px solid #00000023;
+    font-weight: 600;    
+    font-size: 0.7rem;
+    padding: 5px 10px;
+    border-radius: 10px;
+    
+}
+
+.container .content .project .project-footer{
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-footer a{
+    text-decoration: none;
+    color: #00000c;
+    background-color: #0000000c;
+    padding: 5px 20px;
+    margin: 0;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+
+.project-footer a:hover{
+    background-color: #00000021;
+
+}
+
+.project-footer .language .circle{
+    background-color: rgb(255, 102, 0);
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border: 1px solid #00000013;
+    border-radius: 50%;
+}
+
+.project-footer .language{
+    color: #00000c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
